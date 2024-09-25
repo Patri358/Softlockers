@@ -1,0 +1,281 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e2eaff;
+}
+
+/* Header ------------------------------------- */
+
+.header {
+    background-color: #101632;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    height: 90px;
+    justify-content: flex-end;
+    margin-right: 300px;
+}
+
+
+.navbar__group {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar__list {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.navbar__link {
+    float: right;
+    display: block;
+    color: #fffffe;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar__link:hover {
+    background-color: #48e;
+    border-radius: 100px;
+    transition: 1s;
+    
+}
+
+.logo{
+    margin-right: auto;
+}
+
+
+
+
+/* Proyectos -------------------------------- */
+
+
+main {
+    margin: 100px;
+}
+
+.Proyecto {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black; 
+    border-radius: 15px;
+    display: flex;
+    max-width: 100%; 
+    height: auto;
+    padding: 25px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.creador{
+    text-align: right;
+}
+
+
+.titulos{
+    text-align: center;
+    font-size: 25px;
+}
+
+h1{
+    text-align: center;
+}
+
+.links img{
+    max-width: 15%; 
+    height: auto;    
+}
+
+.links:hover, .otroslinks:hover{
+    opacity: 0.74;
+}
+
+.otroslinks img {
+    width: 50%;
+    margin: 0 auto 20px auto;
+    padding: 15px;
+}
+
+.otros_proyectos{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black; 
+    border-radius: 15px;
+    padding-top: 15px;
+}
+
+.fotos{
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+
+
+/* Footer -------------------------------- */
+
+footer {
+    background-color: #101632;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del contenedor */
+}
+
+.footer-text {
+    max-width: 60%; /* Ajusta el ancho máximo del texto según sea necesario */
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea los enlaces a la derecha */
+    margin-right: 10px; /* Añade un margen derecho para evitar desbordamiento */
+}
+
+.links-footer {
+    color: #fff;
+    margin-bottom: 10px; /* Espacio entre enlaces */
+}
+
+.linkedin-imagen {
+    width: 25px;
+    height: auto;
+}
+
+
+
+
+
+
+/* Team------------------------------------*/
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1300px;
+    box-sizing: border-box;
+}
+
+.nombres {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.equipo-item {
+    padding: 0;
+    margin: 0;
+}
+
+.equipo-fotos{
+    border-radius: 400px;
+}
+
+.texto-equipo{
+    text-align: center;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Contacto------------------------------------*/
+
+.h2-contacto{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.texto-faq{
+    text-align: center;
+    padding: 50px;
+}
+
+.formulario{
+    text-align: center;
+}
+
+.form-box{
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: transparent;
+}
+
+.form-box2{
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: transparent;
+    height: 200px;
+    min-height: 100px;
+    font-family: "Roboto", sans-serif;
+    resize: none;
+    vertical-align: top; /
+}
+
+.boton {
+    margin: 10px;
+    background-color: #48e;
+    border-radius: 100px;
+    padding: 25px 40px;
+    border: none;
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.boton:hover {
+    opacity: 0.85;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: #3a7bd5;
+}
+
+
+
